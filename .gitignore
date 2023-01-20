@@ -1,0 +1,12 @@
+data/temp/MNIST/raw/t10k-images-idx3-ubyte
+data/temp/MNIST/raw/t10k-images-idx3-ubyte.gz
+data/temp/MNIST/raw/t10k-labels-idx1-ubyte
+data/temp/MNIST/raw/t10k-labels-idx1-ubyte.gz
+data/temp/MNIST/raw/train-images-idx3-ubyte
+data/temp/MNIST/raw/train-images-idx3-ubyte.gz
+data/temp/MNIST/raw/train-labels-idx1-ubyte
+data/temp/MNIST/raw/train-labels-idx1-ubyte.gz
+data/train
+data/test
+log
+venv

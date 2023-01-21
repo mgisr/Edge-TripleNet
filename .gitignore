@@ -10,3 +10,4 @@ data/train
 data/test
 log
 venv
+data/mnist.h5

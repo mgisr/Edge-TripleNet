@@ -11,3 +11,4 @@ data/test
 log
 venv
 data/mnist.h5
+*__pycache__*

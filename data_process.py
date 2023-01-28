@@ -21,7 +21,6 @@ train_label, test_label = [], []
 if not os.path.exists('data/mnist.h5'):
     for X, y in train_iter:
         X = np.array(X)
-        X = cv2.cvtColor(X, cv2.COLOR_RGB2BGR)
         Y = cv2.Canny(X, 50, 100)
         train_data.append(X)
         train_edge_data.append(Y)
@@ -29,7 +28,6 @@ if not os.path.exists('data/mnist.h5'):
 
     for X, y in test_iter:
         X = np.array(X)
-        X = cv2.cvtColor(X, cv2.COLOR_RGB2BGR)
         Y = cv2.Canny(X, 50, 100)
         test_data.append(X)
         test_edge_data.append(Y)
@@ -49,9 +47,3 @@ if not os.path.exists('data/mnist.h5'):
         f['test_edge_data'] = test_edge_data
         f['train_label'] = train_label
         f['test_label'] = test_label
-
-# with h5py.File('data/mnist.h5') as f:
-#     X = np.array(f['train_data'][0])
-#     cv2.imwrite('1.png', X)
-#     Y = np.array(f['train_edge_data'][0])
-#     cv2.imwrite('2.png', Y)
